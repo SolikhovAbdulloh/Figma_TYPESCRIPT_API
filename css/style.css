@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contiener {
+  max-width: 1440px;
+  padding: 10px 40px;
+  margin: 0 auto;
+}
+button {
+  width: 153px;
+  height: 56px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+button:hover {
+  background-color: green;
+  color: orange;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: orange;
+}
+#modal_Send{
+    display: none;
+}
+.accord_text{
+    display: none;
+}
+.pluss{
+    transition: 3.5s;
+}
+
+ .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+.section2{
+    background-image: url(../img/Frame.png);
+    background-size: cover;
+    background-position: center;
+}
+.sec1{
+    background-image: url(../img/pionina.png);
+    background-size: cover;
+    background-position: center;
+}

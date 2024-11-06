@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="contiener bg-black">
+        <div class="flex justify-between items-center">
+          <a href="#"><img src="../img/logo.png" alt="" /></a>
+          <nav>
+            <ul class="flex items-center gap-4">
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Templates</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </nav>
+          <div class="flex gap-3 items-center">
+            <a href="#" id="Login">Log in</a>
+            <button>Get Started</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- modal -->
+
+    <div
+      id="modal_Send"
+      class="contiener modal fixed top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 bg-[rgba(0,_0,_0,_0.5)] w-full h-full"
+    >
+      <div
+        class="p-[20px] flex flex-col gap-3 items-center bg-[#fff] relative rounded-[8px]"
+      >
+        <div class="flex flex-col items-center gap-3 w-[50%] h-[50%]">
+          <input
+            type="tel"
+            placeholder="Tel"
+            value="+998 "
+            class="p-2 border-[solid] border-[black] w-[100%] border-[2px]"
+          />
+          <input
+            type="email"
+            placeholder="Enter your email..."
+            class="border-[solid] w-[100%] border-[black] border-[2px] p-2"
+          />
+        </div>
+        <button
+          class="w-[50%] h-[40px] bg-gray-600 text-red-400 p-2"
+          type="button"
+        >
+          Send
+        </button>
+        <i
+          id="Close"
+          class="fa-solid text-black fa-xmark absolute top-[5px] right-[15px] text-[24px] cursor-pointer"
+        ></i>
+      </div>
+    </div>
+
+    <!-- modal end -->
+
+    <section>
+      <div class="contiener section2">
+        <div class="flex-col items-start flex py-[80px] justify-around">
+          <div class="flex flex-col gap-3 mt-3 mb-4">
+            <p
+              class="flex gap-7 items-center font-normal text-[18px] leading-[120%] uppercase text-[#fff]"
+            >
+              Sell Online <span>Member Areas</span>
+            </p>
+            <h3 class="font-normal text-[72px] leading-[100%] text-[#fff]">
+              Create <br />
+              members‑only <br />
+              content.
+            </h3>
+            <p class="font-normal text-[22px] leading-[120%] text-[#fff]">
+              Monetize your content with Member Areas. Add <br />
+              paid areas to an existing Squarespace site or build <br />
+              a new one with our award-winning templates.
+            </p>
+          </div>
+          <button>Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-[5vh]">
+      <div class="contiener">
+        <div class="flex justify-between items-center">
+          <img class="cursor-pointer" src="../img/logo2.png" alt="" />
+          <i class="fa cursor-pointer fa-close" aria-hidden="true"></i>
+        </div>
+        <div class="flex justify-center items-center">
+          <div class="flex gap-3 flex-col">
+            <h3
+              class="font-normal text-[56px] leading-[100%] text-center text-[black]"
+            >
+              All-in-one tools.
+            </h3>
+            <p
+              class="font-normal text-[22px] leading-[120%] text-center text-[black]"
+            >
+              Member Areas give you the power to <br />
+              educate and inspire your audience.
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-between items-center gap-3">
+          <div class="flex items-start flex-col gap-3">
+            <img src="../img/t1.png" alt="a" />
+            <p class="font-normal text-[30px] leading-[100%] text-[black]">
+              Share your expertise.
+            </p>
+            <p class="font-normal text-[18px] leading-[100%] text-[black]">
+              Create classes, training, and packages for people of <br />
+              all skill levels and communities.
+            </p>
+          </div>
+
+          <div class="flex items-start flex-col gap-3">
+            <img src="../img/t2.png" alt="a" />
+            <p class="font-normal text-[30px] leading-[100%] text-[black]">
+              Share your expertise.
+            </p>
+            <p class="font-normal text-[18px] leading-[100%] text-[black]">
+              Create classes, training, and packages for people of <br />
+              all skill levels and communities.
+            </p>
+          </div>
+
+          <div class="flex items-start flex-col gap-3">
+            <img src="../img/t3.png" alt="a" />
+            <p class="font-normal text-[30px] leading-[100%] text-[black]">
+              Share your expertise.
+            </p>
+            <p class="font-normal text-[18px] leading-[100%] text-[black]">
+              Create classes, training, and packages for people of <br />
+              all skill levels and communities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contiener sec1">
+        <div class="flex justify-around items-center gap-3 flex-col py-[90px]">
+          <h3
+            class="font-normal text-[56px] leading-[100%] text-center text-[#fff]"
+          >
+            Imagine the <br />
+            possibilities.
+          </h3>
+          <p
+            class="font-normal text-[22px] leading-[120%] text-center text-[#fff]"
+          >
+            Member Areas give you the power to <br />
+            educate and inspire your audience.
+          </p>
+          <a href="#" class="underline pt-3 font-light">Watch the Video</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contiener bg-[#60777c]">
+      <div class="bg-[#60777c]">
+        <div class="pt-[30px] flex items-center gap-4 flex-col">
+          <h2
+            class="font-normal text-[56px] leading-[100%] text-center text-[#fff]"
+          >
+            Engage your audience <br />
+            with exclusive content.
+          </h2>
+          <p
+            class="font-normal text-[22px] leading-[100%] text-center text-[#fff]"
+          >
+            From virtual classes and workshops to newsletters, podcasts,
+            <br />and video series, Member Areas help you build, harness, and
+            <br />
+            monetize the power of your online community.
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-4 flex mt-[5vh] items-center justify-between">
+        <div class="flex flex-col items-start gap-3">
+          <h3 class="font-normal text-[46px] leading-[100%] text-[#fff]">
+            Promote premium content.
+          </h3>
+          <br />
+          <p class="font-normal text-[22px] leading-[100%] text-[#fff]">
+            Whether you’re a chef selling recipes and cooking <br />
+            videos or a financial planner sharing newsletters and <br />
+            podcasts, Squarespace has the tools you need to <br />
+            protect and share your content.
+          </p>
+        </div>
+        <img src="../img/r1.png" alt="" />
+      </div>
+
+      <div class="pt-4 flex mt-[5vh] items-center justify-between">
+        <img src="../img/r2.png" alt="" />
+
+        <div class="flex flex-col items-start gap-3">
+          <h3 class="font-normal text-[46px] leading-[100%] text-[#fff]">
+            Promote premium content.
+          </h3>
+          <br />
+          <p class="font-normal text-[22px] leading-[100%] text-[#fff]">
+            Whether you’re a chef selling recipes and cooking <br />
+            videos or a financial planner sharing newsletters and <br />
+            podcasts, Squarespace has the tools you need to <br />
+            protect and share your content.
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-4 flex mt-[5vh] items-center justify-between">
+        <div class="flex flex-col items-start gap-3">
+          <h3 class="font-normal text-[46px] leading-[100%] text-[#fff]">
+            Promote premium content.
+          </h3>
+          <br />
+          <p class="font-normal text-[22px] leading-[100%] text-[#fff]">
+            Whether you’re a chef selling recipes and cooking <br />
+            videos or a financial planner sharing newsletters and <br />
+            podcasts, Squarespace has the tools you need to <br />
+            protect and share your content.
+          </p>
+        </div>
+        <img src="../img/r3.png" alt="" />
+      </div>
+
+      <div class="pt-4 flex mt-[5vh] items-center justify-between">
+        <img src="../img/r4.png" alt="" />
+
+        <div class="flex flex-col items-start gap-3">
+          <h3 class="font-normal text-[46px] leading-[100%] text-[#fff]">
+            Promote premium content.
+          </h3>
+          <br />
+          <p class="font-normal text-[22px] leading-[100%] text-[#fff]">
+            Whether you’re a chef selling recipes and cooking <br />
+            videos or a financial planner sharing newsletters and <br />
+            podcasts, Squarespace has the tools you need to <br />
+            protect and share your content.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white p-[30px] pt-5 mt-[30px]">
+        <div class="pt-4 flex mt-[5vh] items-center justify-end">
+          <div class="flex flex-col items-start gap-3">
+            <h3 class="font-normal text-[46px] leading-[100%] text-[black]">
+              Protect your content.
+            </h3>
+            <br />
+            <p class="font-normal text-[22px] leading-[100%] text-[black]">
+              Whether you’re a chef selling recipes and cooking <br />
+              videos or a financialnewsletters and <br />
+              podcasts, Squarespace has the tools you need to <br />
+              protect and share your content.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-4 flex mt-[5vh] items-center justify-between">
+        <div class="flex flex-col items-start gap-3">
+          <h3 class="font-normal text-[46px] leading-[100%] text-[#fff]">
+            Promote premium content.
+          </h3>
+          <br />
+          <p class="font-normal text-[22px] leading-[100%] text-[#fff]">
+            Whether you’re a chef selling recipes and cooking <br />
+            videos or a financial planner sharing newsletters and <br />
+            podcasts, Squarespace has the tools you need to <br />
+            protect and share your content.
+          </p>
+        </div>
+        <img src="../img/r5.png" alt="" />
+      </div>
+    </section>
+
+    <section>
+      <div class="contiener">
+        <div class="justify-center text-center gap-2 flex-col items-center">
+          <p>Pick your starting point.</p>
+          <p>
+            Templates make it easy to get started. Just select a Member <br />
+            Areas template, then customize it to suit your needs.
+          </p>
+          <a href="#" class="underline text-[black]">Browse Templates</a>
+        </div>
+        <br />
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../img/swp1.png" alt="" /></div>
+            <div class="swiper-slide"><img src="../img/swp2.png" alt="" /></div>
+            <div class="swiper-slide"><img src="../img/swp1.png" alt="" /></div>
+            <div class="swiper-slide"><img src="../img/swp2.png" alt="" /></div>
+            <div class="swiper-slide"><img src="../img/swp1.png" alt="" /></div>
+            <div class="swiper-slide"><img src="../img/swp2.png" alt="" /></div>
+            <div class="swiper-slide"><img src="../img/swp1.png" alt="" /></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contiener">
+        <div class="flex bg-[black] justify-around items-center">
+          <div class="flex items-start flex-col p-[30px] gap-3">
+            <h3 class="font-normal text-[56px] leading-[100%] text-[#fff]">
+              How to get started <br />
+              with Member Areas
+            </h3>
+            <a
+              href="#"
+              class="font-normal text-[18px] leading-[120%] uppercase underline [text-decoration-skip-ink:none] text-[#fff]"
+              >Get Started→</a
+            >
+          </div>
+
+          <div class="flex flex-col p-[20px] gap-5 justify-around items-start">
+            <p
+              class="flex gap-3 font-normal text-[22px] leading-[120%] text-[#fff]"
+            >
+              <span>01.</span>Create a website with Squarespace, and decide on a
+              <br />
+              name for your member area.
+            </p>
+            <p
+              class="flex gap-3 font-normal text-[22px] leading-[120%] text-[#fff]"
+            >
+              <span>02.</span>Create a website with Squarespace, and decide on a
+              <br />
+              name for your member area.
+            </p>
+            <p
+              class="flex gap-3 font-normal text-[22px] leading-[120%] text-[#fff]"
+            >
+              <span>03.</span>Create a website with Squarespace, and decide on a
+              <br />
+              name for your member area.
+            </p>
+            <p
+              class="flex gap-3 font-normal text-[22px] leading-[120%] text-[#fff]"
+            >
+              <span>04.</span>Create a website with Squarespace, and decide on a
+              <br />
+              name for your member area.
+            </p>
+            <p
+              class="flex gap-3 font-normal text-[22px] leading-[120%] text-[#fff]"
+            >
+              <span>05.</span>Create a website with Squarespace, and decide on a
+              <br />
+              name for your member area.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contiener">
+        <div class="flex flex-col">
+          <h3 class="font-normal text-[40px]">Pricing Plans</h3>
+          <p class="font-normal text-[18px]">
+            Pricing below is in addition <br />
+            to Squarespace website <br />
+            plans.
+          </p>
+        </div>
+
+        <div class="flex items-center justify-between p-[30px]">
+          <div class="flex flex-col">
+            <span
+              ><input type="radio" name="aa" id="s1s" />
+              <label for="s1s">Pay Annually</label></span
+            >
+            <span
+              ><input type="radio" name="aa" id="ss" />
+              <label for="ss" class="opacity-[20%]">Pay Month</label></span
+            >
+          </div>
+
+          <div class="flex gap-[130px] items-center">
+            <p class="flex items-center flex-col gap-2">
+              Starter <span>$9</span
+              ><span class="text-[#0888c8]">Save 10% <br />annually</span>
+            </p>
+            <p class="flex items-center flex-col gap-2">
+              Starter <span>$9</span
+              ><span class="text-[#0888c8]">Save 10% <br />annually</span>
+            </p>
+            <p class="flex items-center flex-col gap-2">
+              Starter <span>$9</span
+              ><span class="text-[#0888c8]">Save 10% <br />annually</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="justify-between flex items-center">
+          <p class="text-start">Number of member areas</p>
+          <div class="flex items-center p-5 gap-[110px]">
+            <p class="flex">1</p>
+            <p class="flex">2</p>
+            <p class="flex">3</p>
+          </div>
+        </div>
+
+        <div class="justify-between flex items-center">
+          <p class="text-start">Transaction fee</p>
+          <div class="flex items-start p-5 gap-[110px]">
+            <p class="flex">7%</p>
+            <p class="flex">1%</p>
+            <p class="flex">4%</p>
+          </div>
+        </div>
+
+        <div class="justify-between flex items-center">
+          <p class="text-start">Unlimited members</p>
+          <div class="flex items-center p-5 gap-[110px]">
+            <p class="flex"><i class="fa-solid fa-check"></i></p>
+            <p class="flex"><i class="fa-solid fa-check"></i></p>
+            <p class="flex"><i class="fa-solid fa-check"></i></p>
+          </div>
+        </div>
+
+        <div class="justify-between flex items-center">
+          <p class="text-start">Unlimited members</p>
+          <div class="flex items-center p-5 gap-[110px]">
+            <p class="flex"><i class="fa-solid fa-check"></i></p>
+            <p class="flex"><i class="fa-solid fa-check"></i></p>
+            <p class="flex"><i class="fa-solid fa-check"></i></p>
+          </div>
+        </div>
+
+        <div class="justify-between flex items-center">
+          <p class="text-start">Unlimited members</p>
+          <div class="flex items-center p-5 gap-[110px]">
+            <p class="flex"><i class="fa-solid fa-check"></i></p>
+            <p class="flex"><i class="fa-solid fa-check"></i></p>
+            <p class="flex"><i class="fa-solid fa-check"></i></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contiener bg-black">
+        <br />
+        <h1
+          class="font-normal text-[40px] leading-[100%] mt-[30px] text-center pt-6 text-[#fff]"
+        >
+          Frequently Asked <br />Questions <br />
+        </h1>
+        <br />
+        <div
+          class="accordion flex justify-between flex-col gap-4"
+          id="accordion"
+        >
+          <div class="flex justify-center text-center">
+            <br />
+            <div class="text-[white] flex gap-[200px]">
+              <div class="flex flex-col justify-center items-center gap-4">
+                <h3 class="pluss flex justify-between items-center gap-5">
+                  Can I use Member Areas with any Squarespace website plan?
+                  <button class="w-[40px] bg-black h-[40px]">
+                    <i
+                      class="fa-solid fa-plus cursor-pointer"
+                      style="color: #e66363"
+                    ></i>
+                  </button>
+                </h3>
+
+                <p class="text-blue-700 accord_text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Excepturi, libero?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center text-center">
+            <br />
+            <div class="text-[white] flex gap-[200px]">
+              <div class="flex flex-col justify-center items-center gap-4">
+                <h3 class="pluss flex justify-between items-center gap-5">
+                  Can I use Member Areas with any Squarespace website plan?
+                  <button class="w-[40px] bg-black h-[40px]">
+                    <i
+                      class="fa-solid fa-plus cursor-pointer"
+                      style="color: #e66363"
+                    ></i>
+                  </button>
+                </h3>
+
+                <p class="text-blue-700 accord_text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Excepturi, libero?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center text-center">
+            <br />
+            <div class="text-[white] flex gap-[200px]">
+              <div class="flex flex-col justify-center items-center gap-4">
+                <h3 class="pluss flex justify-between items-center gap-5">
+                  Can I use Member Areas with any Squarespace website plan?
+                  <button class="w-[40px] bg-black h-[40px]">
+                    <i
+                      class="fa-solid fa-plus cursor-pointer"
+                      style="color: #e66363"
+                    ></i>
+                  </button>
+                </h3>
+
+                <p class="text-blue-700 accord_text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Excepturi, libero?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center text-center">
+            <br />
+            <div class="text-[white] flex gap-[200px]">
+              <div class="flex flex-col justify-center items-center gap-4">
+                <h3 class="pluss flex justify-between items-center gap-5">
+                  Can I use Member Areas with any Squarespace website plan?
+                  <button class="w-[40px] bg-black h-[40px]">
+                    <i
+                      class="fa-solid fa-plus cursor-pointer"
+                      style="color: #e66363"
+                    ></i>
+                  </button>
+                </h3>
+
+                <p class="text-blue-700 accord_text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Excepturi, libero?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center text-center">
+            <br />
+            <div class="text-[white] flex gap-[200px]">
+              <div class="flex flex-col justify-center items-center gap-4">
+                <h3 class="pluss flex justify-between items-center gap-5">
+                  Can I use Member Areas with any Squarespace website plan?
+                  <button class="w-[40px] bg-black h-[40px]">
+                    <i
+                      class="fa-solid fa-plus cursor-pointer"
+                      style="color: #e66363"
+                    ></i>
+                  </button>
+                </h3>
+
+                <p class="text-blue-700 accord_text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Excepturi, libero?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contiener bg-black gap-5 flex justify-around items-center">
+        <img src="../img/uy.png" alt="" />
+        <div class="flex flex-col items-start">
+          <h3 class="font-normal text-[56px] leading-[100%] text-[#fff]">
+            Award-winning customer support
+          </h3>
+          <p class="font-normal text-[20px] leading-[100%] text-[#fff]">
+            Think of Squarespace as your very own IT <br />
+            department. Alongside unlimited hosting and <br />
+            enterprise-grade infrastructure, we offer dedicated 24/7 support.
+          </p>
+          <a href="#">Visit Help Center</a>
+          <a href="#">Contact Support</a>
+          <a href="#">Webinars</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="contiener pb-[7vh] flex justify-between p-[30px] items-center bg-black">
+      <p class="font-normal text-[40px] leading-[100%] text-[#fff]">
+        Squarespace is the all‑in‑one platform to <br />
+        build a beautiful website. Start a Free Trial
+      </p>
+
+      <button>Start a Free Trial</button>
+    </div>
+
+    <footer class="pt-[5hv]">
+      <div class="contiener bg-black">
+        <div class="flex justify-between p-4 items-start">
+
+            <div class="flex flex-col gap-[20px]">
+                <img src="../img/logo3.svg" alt="">
+                <span class="w-[150px] h-[47px] flex gap-3 justify-around items-center bg-gray-700 text-[white]">
+                    $ USD <i class="fa-solid fa-down-long"></i>
+                </span>
+
+                <span class="w-[150px] h-[47px] flex gap-3 justify-around items-center bg-gray-700 text-[white]">
+                    English <i class="fa-solid fa-down-long"></i>
+                </span>
+
+            </div>
+
+
+          <div class="flex flex-col items-start">
+            <p class="text-[white]">Products</p>
+            <br>
+            <a href="#">Website Templates</a>
+            <a href="#">Websites</a>
+            <a href="#">Domains</a>
+            <a href="#">Online Stores</a>
+            <a href="#">Point of Sale</a>
+            <a href="#">Extensions</a>
+            <a href="#">Marketing Tools</a>
+            <a href="#">Email Marketing </a>
+            <a href="#">Stories </a>
+            <a href="#">Professional Email</a>
+            <a href="#">Logo Maker</a>
+            <a href="#">Enterprise</a>
+            <a href="#">Pricing </a>
+            <a href="#">Feature List</a>
+          </div>
+
+
+          <div class="flex flex-col items-start">
+            <p class="text-[white]">Customers</p>
+            <br>
+            <a href="#">Website Templates</a>
+            <a href="#">Websites</a>
+            <a href="#">Domains</a>
+            <a href="#">Online Stores</a>
+            <a href="#">Point of Sale</a>
+            <a href="#">Extensions</a>
+            <a href="#">Marketing Tools</a>
+            <a href="#">Email Marketing </a>
+            <a href="#">Stories </a>
+            
+          </div>
+
+
+         
+<div class="flex flex-col items-start">
+            <p class="text-[white]">Community</p>
+            <br>
+            <a href="#">Website Templates</a>
+            <a href="#">Websites</a>
+            <a href="#">Domains</a>
+            <a href="#">Online Stores</a>
+            <a href="#">Point of Sale</a>
+            <a href="#">Extensions</a>
+        
+            <a href="#">Feature List</a>
+          </div>
+
+
+          <div class="flex flex-col items-start">
+            <p class="text-[white]">Company</p>
+            <br>
+            <a href="#">Website Templates</a>
+            <a href="#">Websites</a>
+            <a href="#">Domains</a>
+            <a href="#">Online Stores</a>
+            <a href="#">Point of Sale</a>
+            <a href="#">Extensions</a>
+            <a href="#">Marketing Tools</a>
+            <a href="#">Email Marketing </a>
+            <a href="#">Stories </a>
+            
+          </div>
+
+          <div class="flex flex-col items-start">
+            <p class="text-[white]">Follow</p>
+            <br>
+            <a href="#">Website Templates</a>
+            <a href="#">Websites</a>
+            <a href="#">Domains</a>
+            <a href="#">Online Stores</a>
+            <a href="#">Point of Sale</a>
+            <a href="#">Extensions</a>
+            <a href="#">Extensions</a>
+            <a href="#">Extensions</a>
+            <a href="#">Marketing Tools</a>
+            <a href="#">Email Marketing </a>
+            <a href="#">Stories </a>
+            
+          </div>
+
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
