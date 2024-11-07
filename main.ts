@@ -60,8 +60,8 @@ async function displayCurrencyData() {
     const UZSRate = data.data.UZS.value as Number;
     const UZB = UZSRate.toFixed(2)
     if (Usd) {
-      Usd.innerHTML = `USD: ${usdRate} $ dollar <img src="../img/Flag_of_the_United_States.svg" alt=""> `; 
-      Uzs.innerHTML = `UZS: ${UZB} So'm <img class="w-4 h-7" src="../img/flag-for-flag-uzbekistan-svgrepo-com.svg" alt="">`;
+      Usd.innerHTML = `USD: ${usdRate} $ dollar <i class="fa-solid fa-down-long"></i> <img src="../img/Flag_of_the_United_States.svg" alt=""> `; 
+      Uzs.innerHTML = `UZS: ${UZB} So'm  <img class="w-4 h-7" src="../img/flag-for-flag-uzbekistan-svgrepo-com.svg" alt="">`;
     }
     
   } catch (error) {
